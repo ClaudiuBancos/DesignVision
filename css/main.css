@@ -1,318 +1,221 @@
 /********************************
 GENERAL
 ********************************/
+* {
+	box-sizing: border-box;
+}
 
 body {
-  font-family:arial, sans-serif;
+	/* flexbox layout to make the footer sticky
+	https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+	display: flex;						
+	min-height: 100vh;
+	flex-direction: column;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: grey;
 }
 
-#wrapper{
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;       /* Changed bottom margin to 0 because it was adding unnecessary space below the footer.*/
- }
-
- a {
-  text-decoration: none;
-}   
+header, footer {
+	margin: 20px;
+}
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
-h3 {
-  margin: 0 0 1em 0;  
-}
-/********************************
-HEADING
-********************************/
-header {
-  float:left;
-  margin: 0;                /* Removed the bottom margin to get rid of the awkward white space, 
-                               since you want the pictures to fit the entire screen */
-  padding: 0 0 0 0;      	/* May have made slight tweaks to vertical padding/margins in the heading section. */
-  width: 100%;
-  }
+a {
+	text-decoration: none;
+	color: dodgerblue;
+} 
 
-.logo {
-  text-align: center;
-  margin: 0;
+a:visited {
+	color: indigo;
 }
 
-.logo img {                 /* Centers the heading logo in the mobile display.*/
-  display: block;
-  max-height: 35px;
-  margin: 5px auto 0 auto;
+a:hover {
+	color: blueviolet;
+} 
+
+h1, h2 {
+	font-weight: 300;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  margin: 15px 0 -5px 0;    /* Removed downwards padding and made it negative to make the heading vertically smaller.*/
-  font-size:1.4em;		/* Changed to 70% of previous value (1.75em). */
-  font-weight:400;
-  line-height: 0.8em;
+p {
+	font-size: 14pt;
+	line-height: 145%;
+	max-width: 65ex;
+	text-align: justify;
 }
-
-
 
 /********************************
-NAVIGATION
+HEADER
 ********************************/
+
+#title {
+	font-size: 36pt;
+	font-weight: 400;
+	color: dimgrey;
+}
+
+#sub-title {
+	font-size: 18pt;
+	color: grey;
+}
+
 nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 10px 0 0;			/* Reduced from 20px to make header thinner on mobile devices. */
-  }    
+	margin-top: 20px;
+} 
 
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-  }
-
-nav li {
-  display: inline-block;
+nav a, nav a:visited {
+	margin-right: 20px;
+	color: grey;
 }
 
-nav a {
-  font-size: .9em;
-  font-weight: 600;				      /* Reduced from 800. */
-  padding: 15px 10px; 
+nav a:hover {
+	color: lawngreen;
 }
 
-    
+nav a.selected {
+	color: limegreen;
+	/*color: aquamarine;*/
+	/*color: lawngreen;*/
+	/*color: mediumaquamarine;*/
+	/*color: lightseagreen;*/
+}
+
+/********************************
+MAIN CONTENT
+********************************/
+
+main {
+	/* flexbox layout to make the footer sticky
+	https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+	flex: 1;
+}
 
 /********************************
 FOOTER
 ********************************/
+
 footer {
-      font-size: 0.75em;
-      text-align: center;
-      clear: both;
-      padding-top: 40px;		    /* Reduced from 50px to make footer thinner. */
-      padding-bottom: 1px;    	/* Removes an awkward white bar from the bottom of the screen. It's kind of a
-                                 workaround, since I don't know the actual cause of the problem, but it does work. */
-      color: #ccc;
-    }
-    
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  }
+	font-size: 0.75em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
+#houzz {
+	margin-top: 2%;
+	margin-bottom: 20px;
+	text-align: center;
+}
 
+#copyright {
+	text-align: right;
+}
 
 /********************************
 PAGE: HOME
 ********************************/
 
 #gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
- #gallery li {
-  float: left;
-  width: 100%;           /* Changed to 100% to make a single column on mobile devices under 480px.
-                           The method Treehouse used (which I am going to use here) is to make the
-                           mobile version of the website the default, and then to use responsive.css
-                           to create the larger pages. */
-
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+ #gallery a {
+	width: 100%;
+	/*float: left;*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*background-color: #f5f5f5;*/
+	/*color: #bdc3c7;*/
 }
 
 #gallery img {
-  display: block;       /* Long story short, this causes the images to be seamless top and bottom.
-                           The technical explanation is more complicated and has to do with the 
-                           image displaying as inline-text by default and the browser leaving room 
-                           for "descenders", letters that reach below the text baseline. */
+	display: block;
 }
-
-
-/*#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7
-}    */
-
-
 
 /********************************
 PAGE: PORTFOLIO
 ********************************/
 
-#portfolio_gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#portfolio {
+	display: flex;
+	flex-wrap: wrap;
 }
-
- #portfolio_gallery li {
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-}
-
-#portfolio_gallery img {
-  display: block;
-}
-
-
 
 /********************************
 PAGE: PROJECT
 ********************************/
 
 #project_gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
  #project_gallery li {
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: #bdc3c7;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: #bdc3c7;
 }
 
 #project_gallery img {
-  display: block;
+	display: block;
 }
 
 #project_gallery li embed {
-  display: block;
-  width: 100%;
-  min-height: 400px;
-  margin: 0;
-  padding: 0;
+	display: block;
+	width: 100%;
+	min-height: 400px;
+	margin: 0;
+	padding: 0;
 }
 
 #project_gallery li p {
-  margin: 5%;
+	margin: 5%;
 }
-
 
 /********************************
 PAGE: ABOUT
 ********************************/
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
+
+#about {
+	margin: 0 auto;
+	padding: 0 5%;
 }
-
-
 
 /********************************
 PAGE: CONTACT
 ********************************/
 
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-  
+#contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto 5%;
 }
 
-.contact-info {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-  
+#contact-text {
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: space-between;
 }
 
-.contact-info li.phone a {
-  background-image: url('../images/phone.png')
+#contact-text > div {
+	max-width: 50%;
 }
 
-.contact-info li.mail a {
-  background-image: url('../images/mail.png')
+iframe {
+	max-width: 100%;
+	margin-top: 18.667px;
 }
-
-
-
-/********************************
-COLORS
-********************************/
-
-/* Site body */
-    
-body {
-  background-color: #fff;
-  color:#999;
-}
-
-/* Home page body */         /* Added this for cases where there's an emtpy space instead of a picture, to match the footer. */
-
-#home_body {
-  background: black;		/* Black background. */
-}
-
-/* Portfolio page body */
-
-#portfolio_body {
-  background: black;		/* Black background. */
-}
-
-/* Green Header  */
-    
-header {
-  background: black;		/* Made the header black. */
-  border-color: #328332;
-}
-
-  /* Nav background on mobile devices */ 
-    
-nav {
-  background: black;		/* Black nav background on mobile devices to match header. */
-}
-
-/* Logo text */ 
-    
-  h1, h2 {
-    color: #fff;
-  }
-
- /* Links  */
-    
-a {
-  color: #6ab47b;
-}
-
- /* Nav link */  
-    
-nav a, nav a:visited {
-  color:#fff;
-}
-
-/* Selected Nav link */  
-    
-nav a.selected, nav a:hover {
-  color:lawngreen;
-}
-
-#home_footer {
-  background: black;      /* Makes the home page's footer a nice green to match the header, 
-                               instead of that awkward white. Leaves the other pages white for now. */
-}
-
 
 
 
