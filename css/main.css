@@ -14,7 +14,7 @@ body {
 
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	color: grey;
+	color: dimgray;
 }
 
 header, footer {
@@ -56,12 +56,12 @@ HEADER
 #title {
 	font-size: 36pt;
 	font-weight: 400;
-	color: dimgrey;
+	color: dimgray;
 }
 
 #sub-title {
 	font-size: 18pt;
-	color: grey;
+	color: gray;
 }
 
 nav {
@@ -70,7 +70,7 @@ nav {
 
 nav a, nav a:visited {
 	margin-right: 20px;
-	color: grey;
+	color: gray;
 }
 
 nav a:hover {
@@ -197,7 +197,7 @@ PAGE: CONTACT
 
 #contact-info {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	justify-content: space-between;
 	margin: auto 5%;
 }
@@ -208,8 +208,49 @@ PAGE: CONTACT
 	justify-content: space-between;
 }
 
-#contact-text > div {
-	max-width: 50%;
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 450px;
+	background-color: lightgray;
+	padding: 10px;
+	color: black;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+label, input, textarea {
+	display: block;
+	width: 100%;
+	/*margin: 5px 0;*/
+	padding: 5px 7px;
+	border-width: 0px;
+	outline: none;
+	font-size: 14pt;
+	font-weight: 300;
+	line-height: 145%;
+}
+
+textarea {
+	height: 200px;
+	resize: none;
+}
+
+input[type="submit"]{
+	width: 100%;
+	max-width: 200px;
+	/*margin-top: 15px;*/
+	margin: 15px auto 5px;
+	/*font-weight: 400;*/
+	background-color: dodgerblue;
+	/*background-color: seagreen;*/
+	color: white;
+	border-radius: 5px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	border: 1px solid silver;
 }
 
 iframe {

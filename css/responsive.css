@@ -31,6 +31,13 @@
 	}
 }
 
+#contact-text > div {
+	min-width: 50%;
+}
+
+#form {
+	order: 2;
+}
 /* Large Screen */
 
 @media screen and (min-width: 900px) {
