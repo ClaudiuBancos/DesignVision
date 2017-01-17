@@ -22,22 +22,19 @@
 /* Medium Screen */
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
- #gallery a {
+	#gallery a {
 		width: 50%;
 	}
 
- #portfolio div {
+	#portfolio div {
 		width: 50%;
+	}
+
+	#contact-text > div {
+		min-width: 50%;
 	}
 }
 
-#contact-text > div {
-	min-width: 50%;
-}
-
-#form {
-	order: 2;
-}
 /* Large Screen */
 
 @media screen and (min-width: 900px) {
