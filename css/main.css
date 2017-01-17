@@ -54,7 +54,7 @@ HEADER
 ********************************/
 
 #title {
-	font-size: 36pt;
+	font-size: 28pt;
 	font-weight: 400;
 	color: dimgray;
 }
@@ -66,6 +66,7 @@ HEADER
 
 nav {
 	margin-top: 20px;
+	font-size: 10pt;
 } 
 
 nav a, nav a:visited {
@@ -178,8 +179,12 @@ PAGE: CONTACT
 
 #contact-text {
 	display: flex;
-	/*flex-direction: column;*/
+	flex-direction: column;
 	justify-content: space-between;
+}
+
+#contact-text > div {
+	max-width: 100%;
 }
 
 form {

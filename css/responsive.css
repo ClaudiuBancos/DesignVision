@@ -1,25 +1,13 @@
-/* Small Screen */
-
-@media screen and (max-width: 549px) {
-	#contact-text {
-		flex-direction: column;
-	}
-
-	#contact-text > div {
-		max-width: 100%;
-	}
-}
-
-/* Navigation Change-Point */
-
-@media screen and (min-width: 640px){
-	nav {
-		text-align: right;
-		margin-top: -25px;
-	}
-}
-
 /* Medium Screen */
+@media screen and (min-width: 480px) {
+	#title {
+		font-size: 36pt;
+	}
+
+	nav {
+		font-size: 12pt;
+	}
+}
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
 	#gallery a {
@@ -30,8 +18,21 @@
 		width: 50%;
 	}
 
+	#contact-text {
+		flex-direction: row;
+	}
+
 	#contact-text > div {
 		min-width: 50%;
+	}
+}
+
+/* Navigation Menu Breakpoint */
+
+@media screen and (min-width: 640px){
+	nav {
+		text-align: right;
+		margin-top: -25px;
 	}
 }
 
@@ -52,13 +53,5 @@
 
 	#contact-info > div {
 		width: 47%;
-	}
-
-	#contact-text {
-		flex-direction: column;
-	}
-
-	#contact-text > div {
-		max-width: 100%;
 	}
 }
