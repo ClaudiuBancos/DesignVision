@@ -64,6 +64,7 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+				// make sure all the values are separated by commas or the whole thing breaks!
 				$('.small-images').slick({
 					infinite: true,
 					dots: true,
@@ -71,14 +72,37 @@
 					swipeToSlide: true, 
 					slidesToShow: 5,
 					slidesToScroll: 1,
-					asNavFor: '.large-image'
+					asNavFor: '.large-image',
+					responsive: [
+						{
+							breakpoint: 640,
+							settings: {
+								slidesToShow: 3
+							}
+						},
+						{
+							breakpoint: 480,
+							settings: {
+								slidesToShow: 1,
+								fade: true,
+								asNavFor: null
+							}
+						}
+					]
 				});
+
 				$('.large-image').slick({
-					  slidesToShow: 1,
-					  slidesToScroll: 1,
-					  arrows: false,
-					  fade: true,
-					  asNavFor: '.small-images'
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					fade: true,
+					asNavFor: '.small-images',
+					responsive: [
+						{
+							breakpoint: 480,
+							settings: 'unslick'
+						}
+					]
 				});
 			});
 		</script>
