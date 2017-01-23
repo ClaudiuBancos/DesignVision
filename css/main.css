@@ -176,6 +176,10 @@ PAGE: PROJECT
 	margin: 0 auto;
 }
 
+.small-images img, .large-image img {
+	cursor: pointer;
+}
+
 /********************************
 PAGE: ABOUT
 ********************************/
