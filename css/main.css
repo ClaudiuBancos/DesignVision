@@ -128,11 +128,6 @@ PAGE: HOME
 
  #gallery a {
 	width: 100%;
-	/*float: left;*/
-	/*margin: 0;*/
-	/*padding: 0;*/
-	/*background-color: #f5f5f5;*/
-	/*color: #bdc3c7;*/
 }
 
 #gallery img {
@@ -146,6 +141,25 @@ PAGE: PORTFOLIO
 #portfolio {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+#portfolio a {
+	width: 100%;
+	position: relative;
+}
+
+#portfolio img {
+	display: block;
+}
+
+.caption {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .6) 100%);
+	color: white;
+	font-size: 16pt;
+	padding: 10px;
 }
 
 /********************************
