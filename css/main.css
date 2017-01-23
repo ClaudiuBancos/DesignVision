@@ -54,7 +54,7 @@ HEADER
 ********************************/
 
 #title {
-	font-size: 36pt;
+	font-size: 28pt;
 	font-weight: 400;
 	color: dimgray;
 }
@@ -66,6 +66,7 @@ HEADER
 
 nav {
 	margin-top: 20px;
+	font-size: 10pt;
 } 
 
 nav a, nav a:visited {
@@ -151,35 +152,9 @@ PAGE: PORTFOLIO
 PAGE: PROJECT
 ********************************/
 
-#project_gallery {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
- #project_gallery li {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: black;
-	color: #bdc3c7;
-}
-
-#project_gallery img {
-	display: block;
-}
-
-#project_gallery li embed {
-	display: block;
-	width: 100%;
-	min-height: 400px;
-	margin: 0;
-	padding: 0;
-}
-
-#project_gallery li p {
-	margin: 5%;
+.slick-gallery-container {
+	background: grey;
+	padding: 50px;
 }
 
 /********************************
@@ -204,8 +179,12 @@ PAGE: CONTACT
 
 #contact-text {
 	display: flex;
-	/*flex-direction: column;*/
+	flex-direction: column;
 	justify-content: space-between;
+}
+
+#contact-text > div {
+	max-width: 100%;
 }
 
 form {
