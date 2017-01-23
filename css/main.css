@@ -171,6 +171,11 @@ PAGE: PROJECT
 	padding: 50px;
 }
 
+.small-images, .large-image {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 /********************************
 PAGE: ABOUT
 ********************************/
