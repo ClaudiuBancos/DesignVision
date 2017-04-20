@@ -47,6 +47,14 @@
 		width: 25%;
 	}
 
+	#about {
+		flex-direction: row;
+	}
+
+	.about-block {
+		max-width: 30%;
+	}
+
 	#contact-info {
 		flex-direction: row;
 	}
