@@ -18,7 +18,7 @@ body {
 }
 
 header, footer {
-	margin: 20px;
+	margin: 20px 5%;
 }
 
 img {
@@ -54,23 +54,27 @@ HEADER
 ********************************/
 
 #title {
-	font-size: 28pt;
+	font-family: 'Alegreya Sans SC'; 
+	font-size: 27pt;
 	font-weight: 400;
 	color: dimgray;
 }
 
 #sub-title {
-	font-size: 18pt;
+	font-family: 'Alegreya Sans SC'; 
+	font-size: 14pt;
+	font-weight: 300;
 	color: gray;
+	letter-spacing: .1em;
 }
 
 nav {
 	margin-top: 20px;
-	font-size: 10pt;
+	display: flex;
+	justify-content: space-between;
 } 
 
 nav a, nav a:visited {
-	margin-right: 20px;
 	color: gray;
 }
 
@@ -84,6 +88,10 @@ nav a.selected {
 	/*color: lawngreen;*/
 	/*color: mediumaquamarine;*/
 	/*color: lightseagreen;*/
+}
+
+.thin-margin-header {
+	margin: 20px;
 }
 
 /********************************
