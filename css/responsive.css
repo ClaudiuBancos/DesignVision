@@ -38,6 +38,15 @@
 	nav a {
 		margin-left: 20px;
 	}
+
+	#about {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.about-block {
+		width: 45%;
+	}
 }
 
 /* Large Screen */
@@ -51,12 +60,8 @@
 		width: 25%;
 	}
 
-	#about {
-		flex-direction: row;
-	}
-
 	.about-block {
-		max-width: 30%;
+		width: 30%;
 	}
 
 	#contact-info {
