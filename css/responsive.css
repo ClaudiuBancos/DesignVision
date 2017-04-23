@@ -56,6 +56,10 @@
 		width: 33.3333333%;
 	}
 
+	#gallery a img {
+		width: 100%;
+	}
+
 	#portfolio a {
 		width: 25%;
 	}
