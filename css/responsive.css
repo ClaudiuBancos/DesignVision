@@ -12,6 +12,11 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	.small-images img {
+		cursor: pointer;
+		max-height: 120px;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
@@ -22,6 +27,8 @@
 	#portfolio a {
 		width: 50%;
 	}
+
+
 
 /*	#contact-text {
 		flex-direction: row;
