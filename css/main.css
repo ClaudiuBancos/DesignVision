@@ -172,8 +172,11 @@ PAGE: PORTFOLIO
 	width: 100%;
 	background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .6) 100%);
 	color: white;
-	font-size: 16pt;
+	font-size: 10pt;
 	padding: 10px;
+/*	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;*/
 }
 
 /********************************
