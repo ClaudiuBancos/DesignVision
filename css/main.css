@@ -183,7 +183,7 @@ PAGE: PROJECT
 ********************************/
 
 .slick-gallery-container {
-	background: grey;
+	background: dimgrey;
 	padding: 50px;
 }
 
@@ -194,6 +194,42 @@ PAGE: PROJECT
 
 .large-image img {
 	margin-bottom: 5px;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: transparent;  /*this makes the default arrow (which uses a font) invisible*/	
+	font-size: 30px;
+}
+
+.slick-prev, .slick-next {
+	width: 30px;
+	height: 30px;
+}
+
+.slick-prev {
+    left: -35px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -35px;
+    left: auto;
+}
+
+.slick-next {
+    right: -35px;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -35px;
+}
+
+.slick-prev:before {
+	background-image: url("../images/icons/left-arrow-white.svg");
+}
+
+.slick-next:before {
+	background-image: url("../images/icons/right-arrow-white.svg");
 }
 
 /********************************
