@@ -7,6 +7,11 @@
 	nav {
 		/*font-size: 12pt;*/
 	}
+
+	.contact-info {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
@@ -18,13 +23,13 @@
 		width: 50%;
 	}
 
-	#contact-text {
+/*	#contact-text {
 		flex-direction: row;
 	}
 
 	#contact-text > div {
 		min-width: 50%;
-	}
+	}*/
 }
 
 /* Navigation Menu Breakpoint */
@@ -47,6 +52,44 @@
 	.about-block {
 		width: 45%;
 	}
+
+	.contact-text-and-image {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-text {
+		width: 48%;
+		padding-right: 50px;
+	}
+
+	.contact-image {
+		width: 52%;
+		height: 39%;
+		max-width: 360px;
+		max-height: 270px;
+		display: inline;
+		padding: 0;
+	}
+
+	.contact-info {
+		display: inherit;
+	}
+
+	.design-guide {
+		margin-bottom: 5px;
+	}
+
+	.air-filters {
+		display: none;
+	}
+
+	.air-filters-2 {
+		display: inherit;
+		width: 100%;
+		max-width: 100%;
+		margin: 10px 0 0 0;
+	}
 }
 
 /* Large Screen */
@@ -56,7 +99,8 @@
 		width: 33.3333333%;
 	}
 
-	#gallery a img {
+	#gallery a img,
+	#portfolio a img {
 		width: 100%;
 	}
 
@@ -68,11 +112,120 @@
 		width: 30%;
 	}
 
-	#contact-info {
+	/* CONTACT PAGE */
+
+	.contact-text {
+		padding-top: 20px;
+	}
+
+	.contact-info {
+		display: flex;
 		flex-direction: row;
 	}
 
+	.design-guide,
+	.air-filters {
+		margin-top: 0;
+	}
+
+	.air-filters {
+		display: inherit;
+	}
+
+	.air-filters-2 {
+		display: none;
+	}
+
+	.contact-image {
+		padding-top: 20px;
+		width: 48%;
+		max-width: 48%;
+		margin-left: 10%;
+		margin-bottom: 20px;
+		padding-right: 0;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.contact-image img {
+		display: block;
+		width: 280px;
+		height: 210px;
+		margin: 0 auto;
+	}
+
+	.form-and-map h1 {
+		margin-top: 0;
+	}
+
+
+
+
+
+	/*
 	#contact-info > div {
 		width: 47%;
+	}*/
+}
+
+@media screen and (min-width: 1024px) {
+
+/* HEADER ON LARGEST SCREEN SIZE */
+
+	header,
+	.thin-margin-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	header a,
+	.thin-margin-header a {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.divider {
+		display: block;
+		font-size: 2em;
+		font-weight: bold;
+		color: #555;
+		margin: 4px 0 0 20px;
+	}
+
+	#sub-title {
+		font-size: 1.8em;
+		font-weight: 400;
+		margin-left: 20px;
+		margin-top: 12px;
+	}
+
+	nav {
+		margin-top: 18px;
+	}
+
+	/* CONTACT PAGE ON LARGEST SCREEN SIZE */
+
+	.contact-content {
+		max-width: 1400px;
+	}
+
+	.contact-text,
+	.contact-image {
+		max-width: 600px;
+	}
+
+	.form-and-map {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#form,
+	.map {
+		width: 45%;
+		max-width: 600px;
 	}
 }

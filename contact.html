@@ -7,7 +7,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Alegreya Sans SC:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/responsive.css">
-		<meta name="viewport" content="width=device-wifth, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,8 +21,9 @@
 
 	<body>
 		<header>
-			<a href="index.html">
-				<div id="title">McCall Architects</div>
+			<a class="title-and-subtitle" href="index.html">
+				<div id="title">McCALL ARCHITECTS</div>
+				<div class="divider">-</div>
 				<div id="sub-title"> MAUI, HAWAII</div>
 			</a>
 		
@@ -34,54 +35,61 @@
 			</nav>
 		</header>
 
-		<main id="contact-info">
-			<div>
-				<div id="contact-text">
-					<div>
-						<p>
-							Jim McCall<br>
-							<a href="mailto:jim@design-vision.com">jim@design-vision.com</a><br>
-							808.870.2222
-						</p>
+		<main class="contact-content">
+			<div class="contact-text-and-image">
+				<div class="contact-text">
+					<div class=contact-info>
+						<div class="name-email-phone">
+							<p>Jim McCall</p>
+							<p><a href="mailto:jim@design-vision.com">info@design-vision.com</a></p>
+							<p>808.870.2222</p>
+						</div>
 
-						<p>
-							McCall Architects Inc.<br>
-							PO BOX 869<br>
-							Kula, HI 96790
-						</p>					
+						<div class="address">
+							<p>McCall Architects Inc.</p>
+							<p>PO BOX 869</p>
+							<p>Kula, HI 96790</p>
+						</div>					
 					</div>
 
 					<div>
-						<p>Ready to get started? Please fill out our <a href="downloads/DV Design Guide.pdf" download>Design Guide</a>.
+						<p class="design-guide">Ready to get started? Please fill out our <a href="downloads/DV Design Guide.pdf" download>Design Guide</a>.
 						</p>
 
-						<p>If you are interested in the finest indoor air quality for your home or business please visit <a href="http://airfiltershawaii.com/">Air Filters Hawaii</a>.</p>
+						<p class="air-filters">If you are interested in the finest indoor air quality for your home or business please visit <a href="http://airfiltershawaii.com/">Air Filters Hawaii</a>.</p>
 					</div>
+
 				</div>
+
+				<div class="contact-image">
+					<img src="images/ocean-view-from-porch.jpg" alt="Ocean View From Porch">
+				</div>
+
 			</div>
 
-			<div>
-				<img id="contact-image" src="images/ocean-view-from-porch.jpg" alt="Ocean View From Porch">
-			</div>
+			<p class="air-filters-2">If you are interested in the finest indoor air quality for your home or business please visit <a href="http://airfiltershawaii.com/">Air Filters Hawaii</a>.</p>
 
-			<div id="form">
-				<h1>Contact Us</h1>
-				
-				<form action="https://formspree.io/claudiubancos@gmail.com" method="post">
-					<label for="name">Name: </label>
-					<input type="text" name="name" required>
-					<label for="email">Email: </label>
-					<input type="email" name="email" required>
-					<label for="body">Message: </label>
-					<textarea name="body" required></textarea>
-					<input type="submit" name="submit" value="Send Message">
-				</form>
-			</div>
+			
+			<div class="form-and-map">
+				<div id="form">
+					<h1>Contact Us</h1>
+					
+					<form action="https://formspree.io/claudiubancos@gmail.com" method="post">
+						<label for="name">Name: </label>
+						<input type="text" name="name" required>
+						<label for="email">Email: </label>
+						<input type="email" name="email" required>
+						<label for="body">Message: </label>
+						<textarea name="body" required></textarea>
+						<input type="submit" name="submit" value="Send Message">
+					</form>
+				</div>
 
-			<div>
-				<h1>Visit Us</h1>
+				<div class="map">
+					<h1>Visit Us</h1>
 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d477590.81358664826!2d-156.42373825764142!3d20.743568901927226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7954c93bb0b03c95%3A0x23bbc2f419768337!2s1402+Kamehameiki+Rd%2C+Kula%2C+HI+96790!5e0!3m2!1sen!2sus!4v1492888073394" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d477590.81358664826!2d-156.42373825764142!3d20.743568901927226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7954c93bb0b03c95%3A0x23bbc2f419768337!2s1402+Kamehameiki+Rd%2C+Kula%2C+HI+96790!5e0!3m2!1sen!2sus!4v1492888073394" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</main>
 
