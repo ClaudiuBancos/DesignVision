@@ -72,6 +72,10 @@ HEADER
 	letter-spacing: .1em;
 }
 
+.divider {
+	display: none;
+}
+
 nav {
 	margin-top: 20px;
 	display: flex;
@@ -95,7 +99,7 @@ nav a.selected {
 }
 
 .thin-margin-header {
-	margin: 20px;
+	margin: 5px 20px;
 }
 
 /********************************
@@ -212,7 +216,26 @@ PAGE: ABOUT
 PAGE: CONTACT
 ********************************/
 
-#contact-info {
+.contact-content {
+	margin: 0 5%;
+}
+
+.name-email-phone {
+	margin-bottom: 20px;
+}
+
+.name-email-phone p,
+.address p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.air-filters-2 {
+	display: none;
+}
+
+
+/*#contact-info {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
@@ -233,13 +256,13 @@ PAGE: CONTACT
 #contact-image {
 	object-fit: cover;
 	min-height: 100%;
-}
+}*/
 
 form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 450px;
+	height: 350px;
 	background-color: lightgray;
 	padding: 10px;
 	color: black;
@@ -266,6 +289,9 @@ textarea {
 input[type="submit"]{
 	width: 100%;
 	max-width: 200px;
+	height: 60px;
+	line-height: inherit;
+	padding: 0 7px 0px;
 	/*margin-top: 15px;*/
 	margin: 15px auto 5px;
 	/*font-weight: 400;*/
@@ -281,6 +307,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 iframe {
 	width: 100%;
+	height: 350px;
 */}
 
 
