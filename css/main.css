@@ -189,11 +189,11 @@ PAGE: PROJECT
 
 .small-images, .large-image {
 	max-width: 900px;
-	margin: 0 auto;
+	margin: 0 auto 30px;
 }
 
-.small-images img, .large-image img {
-	cursor: pointer;
+.large-image img {
+	margin-bottom: 5px;
 }
 
 /********************************
