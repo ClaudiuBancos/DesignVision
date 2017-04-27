@@ -1,5 +1,5 @@
 /* Medium Screen */
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
 	#title {
 		font-size: 36pt;
 	}
@@ -19,7 +19,7 @@
 	}
 }
 
-@media screen and (min-width: 480px) and (max-width: 899px) {
+@media (min-width: 480px) and (max-width: 899px) {
 	#gallery a {
 		width: 50%;
 	}
@@ -41,7 +41,7 @@
 
 /* Navigation Menu Breakpoint */
 
-@media screen and (min-width: 630px){
+@media (min-width: 630px){
 	nav {
 		margin-top: -24px;
 		justify-content: flex-end;
@@ -101,7 +101,7 @@
 
 /* Large Screen */
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
 	#gallery a {
 		width: 33.3333333%;
 	}
@@ -175,7 +175,7 @@
 	}*/
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 
 /* HEADER ON LARGEST SCREEN SIZE */
 
