@@ -58,16 +58,17 @@ HEADER
 ********************************/
 
 #title {
-	font-size: 27pt;
+	font-size: 24pt;
 	font-weight: 400;
 	color: dimgray;
+	letter-spacing: .02em;
 }
 
 #sub-title {
 	font-size: 14pt;
 	font-weight: 300;
-	color: gray;
-	letter-spacing: .1em;
+	color: dimgray;
+	letter-spacing: .07em;
 }
 
 .divider {
@@ -78,7 +79,13 @@ nav {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
+	font-size: 15px;
+	letter-spacing: .02em;
 } 
+
+.thin-margin-header nav {
+	margin-right: 8px;
+}
 
 nav a, nav a:visited {
 	color: gray;
@@ -119,11 +126,12 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-bottom: 5px;
 }
 
 #houzz {
-	margin-top: 2%;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 0;
 	text-align: center;
 }
 
