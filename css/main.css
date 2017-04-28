@@ -257,6 +257,11 @@ PAGE: ABOUT
 	width: 100%;
 }
 
+.about-block p {
+	font-size: 10pt;
+	color: black;
+}
+
 /********************************
 PAGE: CONTACT
 ********************************/
