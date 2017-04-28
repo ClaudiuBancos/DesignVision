@@ -40,7 +40,14 @@
 					<div class=contact-info>
 						<div class="name-email-phone">
 							<p>Jim McCall</p>
-							<p><a href="mailto:jim@design-vision.com">info@design-vision.com</a></p>
+							<p>
+								<script>
+									var username = "info";
+									var hostname = "design-vision.com";
+									var linktext = username + "@" + hostname;
+									document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+								</script>
+							</p>
 							<p>808.870.2222</p>
 						</div>
 
