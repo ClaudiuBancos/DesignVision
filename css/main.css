@@ -192,7 +192,8 @@ PAGE: PROJECT
 ********************************/
 
 .slick-gallery-container {
-	background: dimgrey;
+	/*background: dimgrey;*/
+	background: #eee;
 	padding: 50px;
 }
 
@@ -234,11 +235,11 @@ PAGE: PROJECT
 }
 
 .slick-prev:before {
-	background-image: url("../images/icons/left-arrow-white.svg");
+	background-image: url("../images/icons/left-arrow-black.svg");
 }
 
 .slick-next:before {
-	background-image: url("../images/icons/right-arrow-white.svg");
+	background-image: url("../images/icons/right-arrow-black.svg");
 }
 
 /********************************
@@ -255,6 +256,11 @@ PAGE: ABOUT
 
 .about-block img {
 	width: 100%;
+}
+
+.about-block p {
+	font-size: 10pt;
+	color: black;
 }
 
 /********************************
