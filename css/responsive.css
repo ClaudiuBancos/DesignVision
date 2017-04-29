@@ -145,9 +145,9 @@
 
 	.contact-image {
 		padding-top: 20px;
-		width: 48%;
-		max-width: 48%;
-		margin-left: 10%;
+		width: 47%;
+		max-width: 630px;
+		/*margin-left: 10%;*/
 		margin-bottom: 20px;
 		padding-right: 0;
 		height: auto;
@@ -156,8 +156,8 @@
 
 	.contact-image img {
 		display: block;
-		width: 280px;
-		height: 210px;
+		/*width: 280px;
+		height: 210px;*/
 		margin: 0 auto;
 	}
 
@@ -215,12 +215,12 @@
 	/* CONTACT PAGE ON LARGEST SCREEN SIZE */
 
 	.contact-content {
-		max-width: 1400px;
+		max-width: 1300px;
 	}
 
 	.contact-text,
 	.contact-image {
-		max-width: 600px;
+		max-width: 630px;
 	}
 
 	.form-and-map {
@@ -231,8 +231,8 @@
 
 	#form,
 	.map {
-		width: 45%;
-		max-width: 600px;
+		width: 47%;
+		max-width: 630px;
 	}
 }
 
