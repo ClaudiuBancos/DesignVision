@@ -46,6 +46,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Celeste's ignored files
 *.sublime-workspace
-
 design-vision.todo
+*.xcf
+*~
