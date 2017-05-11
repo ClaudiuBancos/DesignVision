@@ -16,6 +16,7 @@
 	.small-images img {
 		cursor: pointer;
 		max-height: 120px;
+		max-width: 173px;
 	}
 }
 
