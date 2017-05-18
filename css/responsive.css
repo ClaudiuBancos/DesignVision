@@ -112,6 +112,11 @@
 		width: 100%;
 	}
 
+	#gallery img {
+		height: 30vh;
+		object-fit: cover;
+	}
+
 	#portfolio a {
 		width: 25%;
 	}
@@ -201,7 +206,7 @@
 
 	#sub-title {
 		font-size: 21pt;
-		margin-left: 40px;
+		margin-left: 15px;
 	}
 
 	nav {
