@@ -112,6 +112,11 @@
 		width: 100%;
 	}
 
+	#gallery img {
+		height: 30vh;
+		object-fit: cover;
+	}
+
 	#portfolio a {
 		width: 25%;
 	}
