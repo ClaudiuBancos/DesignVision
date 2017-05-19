@@ -204,6 +204,7 @@ PAGE: PROJECT
 
 .large-image img {
 	margin-bottom: 5px;
+	max-height: 90vh;
 	object-fit: contain;
 }
 
