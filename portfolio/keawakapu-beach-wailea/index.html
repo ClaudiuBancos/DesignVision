@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Keawakapu Beach Wailea Oceanfront Island Style Estate | McCall Architects in Maui, Hawaii</title>
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/responsive.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-96611577-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body id="portfolio_body">
+
+		<header class="thin-margin-header">
+			<a href="../../index">
+				<div id="title">McCALL ARCHITECTS</div>
+				<div id="sub-title"> MAUI HAWAII</div>
+			</a>
+		
+			<nav>
+				<a href="../../index">HOME</a>  
+				<a href="../../portfolio">PORTFOLIO</a>    
+				<a href="../../about">ABOUT</a> 
+				<a href="../../contact">CONTACT</a>
+			</nav>
+		</header>
+
+		<main>
+			<div class="slick-gallery-container">
+				<div class="small-images">
+					<img src="min\keawakapu-beach-wailea-exterior.min.jpg" alt="Keawakapu Beach Wailea Exterior">
+					<img src="min\keawakapu-beach-wailea-exterior-landscaping.min.jpg" alt="Keawakapu Beach Wailea Landscaping">
+					<img src="min\keawakapu-beach-wailea-ceiling.min.jpg" alt="Keawakapu Beach Wailea Ceiling">
+					<img src="min\keawakapu-beach-wailea-eaves.min.jpg" alt="Keawakapu Beach Wailea Eaves">
+					<img src="min\keawakapu-beach-wailea-site-rendering.min.jpg" alt="Keawakapu Beach Wailea Site Rendering">
+					<img src="min\keawakapu-beach-wailea-sunset.min.jpg" alt="Keawakapu Beach Wailea Sunset">
+					<img src="min\keawakapu-beach-wailea-exterior-in-progress.min.jpg" alt="Keawakapu Beach Wailea In Progress">
+					<img src="min\keawakapu-beach-wailea-under-construction.min.jpg" alt="Keawakapu Beach Wailea Under Construction">
+					<img src="min\keawakapu-beach-wailea-in-progress.min.jpg" alt="Keawakapu Beach Wailea In Progress">
+				</div>
+				<div class="large-image">
+					<img data-lazy="keawakapu-beach-wailea-exterior.jpg" alt="Keawakapu Beach Wailea Exterior">
+					<img data-lazy="keawakapu-beach-wailea-exterior-landscaping.jpg" alt="Keawakapu Beach Wailea Landscaping">
+					<img data-lazy="keawakapu-beach-wailea-ceiling.jpg" alt="Keawakapu Beach Wailea Ceiling">
+					<img data-lazy="keawakapu-beach-wailea-eaves.jpg" alt="Keawakapu Beach Wailea Eaves">
+					<img data-lazy="keawakapu-beach-wailea-site-rendering.jpg" alt="Keawakapu Beach Wailea Site Rendering">
+					<img data-lazy="keawakapu-beach-wailea-sunset.jpg" alt="Keawakapu Beach Wailea Sunset">
+					<img data-lazy="keawakapu-beach-wailea-exterior-in-progress.jpg" alt="Keawakapu Beach Wailea In Progress">
+					<img data-lazy="keawakapu-beach-wailea-under-construction.jpg" alt="Keawakapu Beach Wailea Under Construction">	
+					<img data-lazy="keawakapu-beach-wailea-in-progress.jpg" alt="Keawakapu Beach Wailea In Progress">
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="houzz">
+				<a href="http://www.houzz.com/pro/jimursi/mccall-architects-inc"><img src="../../images/houzz.png" alt="Featured on Houzz"></a>
+			</div>
+
+			<div id="copyright">&copy; 2017 McCall Architects Inc.</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../../slick/slick.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// make sure all the values are separated by commas or the whole thing breaks!  But don't put a comma after the last line.
+				$('.small-images').slick({
+					asNavFor: '.large-image',
+					centerMode: true,
+					dots: true,
+					focusOnSelect: true,
+					infinite: true,
+					slidesToScroll: 1,
+					slidesToShow: 5,
+					swipeToSlide: true, 
+					variableWidth: true,
+					responsive: [
+						{
+							breakpoint: 720,
+							settings: {
+								dots: false,
+							}
+						},
+						{
+							breakpoint: 640, //width < 640
+							settings: {
+								dots: false,
+								slidesToShow: 3
+							}
+						},
+						{
+							breakpoint: 480,  //width < 480
+							settings: {
+								adaptiveHeight: true,
+								asNavFor: null,
+								dots: false,
+								fade: true,
+								slidesToShow: 1,
+								variableWidth: false
+							}
+						}
+					]
+				});
+
+				$('.large-image').slick({
+					adaptiveHeight: true,
+					asNavFor: '.small-images',
+					fade: true,
+					lazyLoad: 'progressive',
+					slidesToScroll: 1,
+					slidesToShow: 1,
+					responsive: [
+						{
+							breakpoint: 480,  //width < 480
+							settings: 'unslick'
+						}
+					]
+				});
+			});
+		</script>
+	</body>
+</html>
