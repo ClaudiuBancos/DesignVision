@@ -203,9 +203,19 @@ PAGE: PROJECT
 }
 
 .large-image img {
+	display: block;
+	margin: 0 auto;
 	margin-bottom: 5px;
 	max-height: 90vh;
-	object-fit: contain;
+	object-fit: cover;
+}
+
+.large-image .portrait {
+	object-fit: contain;  /*this prevents the portrait images from getting cropped*/
+}
+
+.large-image .protected {
+	max-height: none;  /*this prevents the drawings from getting cropped at the expense of them possibly being taller than the page height*/
 }
 
 .slick-prev:before, .slick-next:before {
