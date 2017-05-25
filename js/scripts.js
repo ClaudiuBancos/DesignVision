@@ -1,4 +1,4 @@
 /* Prevents Right Click */
-$(".protected").contextmenu(function() {
+$(".drawing").contextmenu(function() {
     return false;
 });

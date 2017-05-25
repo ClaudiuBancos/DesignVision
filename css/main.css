@@ -214,7 +214,7 @@ PAGE: PROJECT
 	object-fit: contain;  /*this prevents the portrait images from getting cropped*/
 }
 
-.large-image .protected {
+.large-image .drawing {
 	max-height: none;  /*this prevents the drawings from getting cropped at the expense of them possibly being taller than the page height*/
 }
 
