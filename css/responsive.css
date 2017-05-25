@@ -186,6 +186,27 @@
 	#contact-info > div {
 		width: 47%;
 	}*/
+
+
+}
+
+@media (min-width: 1030px) {
+	.slick-prev:before, .slick-next:before {
+		font-size: 60px;
+	}
+
+	.slick-prev, .slick-next {
+		width: 60px;
+		height: 60px;
+	}
+
+	.slick-prev, [dir='rtl'] .slick-next {
+	    left: -65px;
+	}
+
+	[dir='rtl'] .slick-prev, .slick-next {
+	    right: -65px;
+	}
 }
 
 @media (min-width: 1024px) {
