@@ -268,6 +268,12 @@
 		width: 47%;
 		max-width: 630px;
 	}
+
+	.small-images, .large-image {
+		width: 130vh;            /*I'm assuming screens this big will be oriented horizontally*/
+		max-width: 1280px;
+	}
+
 }
 
 @media (min-width: 1100px) {
